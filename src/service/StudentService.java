@@ -1,6 +1,6 @@
-package ru.gb.oseminar.service;
+package service;
 
-import ru.gb.oseminar.data.Student;
+import data.Student;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -22,9 +22,9 @@ public class StudentService implements UserService<Student> {
     @Override
     public void create(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
         Long countMaxId = 0L;
-        for (Student student: students){
-                if (student.getStudentId() > countMaxId){
-                    countMaxId = student.getStudentId();
+        for (Student student : students) {
+            if (student.getStudentId() > countMaxId) {
+                countMaxId = student.getStudentId();
             }
         }
         countMaxId++;

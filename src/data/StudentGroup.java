@@ -1,8 +1,8 @@
-package ru.gb.oseminar.data;
+package data;
 
 import java.util.List;
 
-public class StudentGroup implements Iterable<Student>{
+public class StudentGroup implements Iterable<Student> {
     private List<Student> students;
     private Teacher teacher;
 
@@ -30,9 +30,9 @@ public class StudentGroup implements Iterable<Student>{
     @Override
     public String toString() {
         return "StudentGroup{" +
-               "students=" + students +
-               ", teacher=" + teacher +
-               '}';
+                "students=" + students +
+                ", teacher=" + teacher +
+                '}';
     }
 
     @Override

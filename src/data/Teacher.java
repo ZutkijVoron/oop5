@@ -1,9 +1,9 @@
-package ru.gb.oseminar.data;
+package data;
 
 import java.time.LocalDate;
 import java.util.Comparator;
 
-public class Teacher extends User{
+public class Teacher extends User {
 
     private Long teacherId;
 

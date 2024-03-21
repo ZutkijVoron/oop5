@@ -1,8 +1,8 @@
-package ru.gb.oseminar.data;
+package data;
 
 import java.time.LocalDate;
 
-public class Student extends User implements Comparable<Student>{
+public class Student extends User implements Comparable<Student> {
     private Long studentId;
 
     public Student(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
@@ -25,12 +25,12 @@ public class Student extends User implements Comparable<Student>{
     @Override
     public String toString() {
         return "Student{" +
-               "studentId='" + studentId +'\'' +
-               ", firstName='" + super.getFirstName() + '\'' +
-               ", secondName='" + super.getSecondName() + '\'' +
-               ", patronymic='" + super.getPatronymic() + '\'' +
-               ", dateOfBirth=" + super.getDateOfBirth() +
-               '}';
+                "studentId='" + studentId + '\'' +
+                ", firstName='" + super.getFirstName() + '\'' +
+                ", secondName='" + super.getSecondName() + '\'' +
+                ", patronymic='" + super.getPatronymic() + '\'' +
+                ", dateOfBirth=" + super.getDateOfBirth() +
+                '}';
     }
 
     @Override

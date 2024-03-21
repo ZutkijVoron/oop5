@@ -1,4 +1,4 @@
-package ru.gb.oseminar.data;
+package data;
 
 import java.time.LocalDate;
 
@@ -50,11 +50,11 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-               "firstName='" + firstName + '\'' +
-               ", secondName='" + secondName + '\'' +
-               ", patronymic='" + patronymic + '\'' +
-               ", dateOfBirth=" + dateOfBirth +
-               '}';
+                "firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                '}';
     }
 
     @Override
@@ -68,19 +68,16 @@ public class User {
 
         User user = (User) o;
 
-        if (getFirstName() != null ? !getFirstName().equals(user.getFirstName()) :
-                user.getFirstName() != null) {
+        if (getFirstName() != null ? !getFirstName().equals(user.getFirstName()) : user.getFirstName() != null) {
             return false;
         }
-        if (getSecondName() != null ? !getSecondName().equals(user.getSecondName()) :
-                user.getSecondName() != null) {
+        if (getSecondName() != null ? !getSecondName().equals(user.getSecondName()) : user.getSecondName() != null) {
             return false;
         }
-        if (getPatronymic() != null ? !getPatronymic().equals(user.getPatronymic()) :
-                user.getPatronymic() != null) {
+        if (getPatronymic() != null ? !getPatronymic().equals(user.getPatronymic()) : user.getPatronymic() != null) {
             return false;
         }
-        return getDateOfBirth() != null ? getDateOfBirth().equals(user.getDateOfBirth()) :
-                user.getDateOfBirth() == null;
+        return getDateOfBirth() != null ? getDateOfBirth().equals(user.getDateOfBirth())
+                : user.getDateOfBirth() == null;
     }
 }

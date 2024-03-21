@@ -1,4 +1,4 @@
-package ru.gb.oseminar.data;
+package data;
 
 import java.util.Iterator;
 import java.util.List;
@@ -20,7 +20,7 @@ public class StudentGroupIterator implements Iterator<Student> {
 
     @Override
     public Student next() {
-        if (!hasNext()){
+        if (!hasNext()) {
             return null;
         }
         counter++;

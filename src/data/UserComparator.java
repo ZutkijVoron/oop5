@@ -1,4 +1,4 @@
-package ru.gb.oseminar.data;
+package data;
 
 import java.util.Comparator;
 

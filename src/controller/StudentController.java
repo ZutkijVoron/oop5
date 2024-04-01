@@ -4,6 +4,7 @@ import data.Student;
 import data.Teacher;
 import service.StudentGroupService;
 import service.StudentService;
+import view.StudentGroupView;
 import view.StudentView;
 
 import java.time.LocalDate;
@@ -15,6 +16,7 @@ public class StudentController implements UserController<Student> {
     private final StudentService dataService = new StudentService();
     private final StudentGroupService studentGroupService = new StudentGroupService();
     private final StudentView studentView = new StudentView();
+    private final StudentGroupView studentGroupView = new StudentGroupView();
 
     @Override
     public void create(String firstName, String secondName, String patronymic, LocalDate dateOfBirth) {
@@ -24,7 +26,7 @@ public class StudentController implements UserController<Student> {
 
     public void createStudentGroup(Teacher teacher, List<Student> students) {
         studentGroupService.createStudentGroup(teacher, students);
-        studentView.sendOnConsoleUserGroup(studentGroupService.getStudentGroup());
+        studentGroupView.sendOnConsole(studentGroupService.getStudentGroup());
     }
 
     public void getStudentInStudentGroup(String firstName, String secondName) {

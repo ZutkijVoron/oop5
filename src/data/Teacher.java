@@ -1,7 +1,6 @@
 package data;
 
 import java.time.LocalDate;
-import java.util.Comparator;
 
 public class Teacher extends User {
 
@@ -35,10 +34,4 @@ public class Teacher extends User {
                 '}';
     }
 
-    public static class TeacherComparator implements Comparator {
-        @Override
-        public int compare(Object o1, Object o2) {
-            return 0;
-        }
-    }
 }

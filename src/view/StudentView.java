@@ -1,7 +1,6 @@
 package view;
 
 import data.Student;
-import data.StudentGroup;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -15,10 +14,6 @@ public class StudentView implements UserView<Student> {
         for (Student user : students) {
             logger.info(user.toString());
         }
-    }
-
-    public void sendOnConsoleUserGroup(StudentGroup studentGroup) {
-        logger.info(studentGroup.toString());
     }
 
 }
